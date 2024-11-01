@@ -1,0 +1,3 @@
+[submodule "lib/seismometer"]
+	path = lib/seismometer
+	url = https://github.com/yossy4411/ogsp-seismometer.git
