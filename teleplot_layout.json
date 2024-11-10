@@ -1,0 +1,83 @@
+{
+   "widgets": [
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 4,
+            "w": 12,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "scale",
+               "sourceNames": [
+                  "scale"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "scale",
+                  "_id": "data-serie-0",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 12,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "y",
+               "sourceNames": [
+                  "y"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "y",
+                  "_id": "data-serie-2",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "x",
+               "sourceNames": [
+                  "x"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "x",
+                  "_id": "data-serie-5",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "z",
+               "sourceNames": [
+                  "z"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "z",
+                  "_id": "data-serie-6",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      }
+   ],
+   "viewDuration": 15
+}
