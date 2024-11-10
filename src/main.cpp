@@ -1,21 +1,16 @@
 #include <Arduino.h>
+#include "ads1115.h"
 
-// put function declarations here:
-int myFunction(int, int);
+seismometer::ADS1115Sensor sensor(100);
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
-  Serial.begin(9600);
-  Serial.println(result);
+    Serial.begin(9600);
+    sensor.begin();
 }
 
 void loop() {
-  Serial.println("Hello World");
-  delay(1000);
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+    sensor.get_acceleration();
+    float scale = sensor.get_seismic_scale();
+    Serial.printf(">scale: %f;\n", scale);
+    sensor.wait_for_next();
 }
